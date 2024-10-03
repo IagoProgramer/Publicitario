@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PubliMax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <div class="logo-container">
+            <img src="publi.png" alt="Logo PubliMax" class="logo">
+        </div>
+    </header>
+
+    <nav class="nav-bar bg-warning py-2">
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="serviços.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="portifolio.html">Portfólio</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog / Novidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato / Orçamento</a></li>
+        </ul>
+    </nav>
+    <div class="search-box">
+        <input type="text" class="form-control" placeholder="Digite aqui" id="search-input">
+        <p>Já pesquisado: XXXXX</p>
+    </div>
+
+    <section class="portfolio1 container my-5">
+        <h2 class="text-warning mb-4">Portfólio</h2>
+
+
+        <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="pizza.png" class="d-block w-100 carrossel-img" alt="Pizza">
+                </div>
+                <div class="carousel-item">
+                    <img src="suco1.png" class="d-block w-100 carrossel-img" alt="Suco">
+                </div>
+                <div class="carousel-item">
+                    <img src="cafe.png" class="d-block w-100 carrossel-img" alt="Café">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+->
+        <div class="row my-4">
+            <div class="col-md-6 mb-4">
+                <img src="fanta.png" class="img-fluid rounded" alt="Fanta">
+            </div>
+            <div class="col-md-6 mb-4">
+                <img src="burguer.png" class="img-fluid rounded" alt="Hambúrguer">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

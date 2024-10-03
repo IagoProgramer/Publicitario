@@ -1,23 +1,34 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-
+}
 
 
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-
 }
-
 header{
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width: 1020px){
+    .search-box{
+        display: none;
+
+    }
+}
+@media screen and (max-width: 1020px){
+    .carousel-inner{
+        margin-left: 0;
+
+    }
+}
+
 
 
 .nav-bar {
@@ -79,7 +90,7 @@ nav ul li a {
 
 .carousel-inner{
     width: 30%;
-    margin-left:20pc;
+    margin-left:10pc;
     object-fit: cover;
 
 }

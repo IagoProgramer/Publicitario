@@ -1,54 +1,73 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
-
+}
 
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
     color: #fff;
-
 }
 
-header{
+header {
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.portifolio1{
+.nav-bar {
+    width: 100%;
+    background-color: #ffc107;
+}
+
+.portifolio1 {
     display: flex;
     gap: 2vw;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 0 2vw;
-
 }
-.img{
+
+.img {
     width: 340px;
     height: 340px;
     border: 10px solid #FFF;
-    box-shadow: 5px 5px 5px #0006;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
     flex-grow: 1;
-    transition: transform .5s linear;
+    transition: transform 0.5s linear;
 }
 
-.img img{ 
+.img img { 
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.img:hover{
-    transform: scale(1.3);
+
+.img:hover {
+    transform: scale(1.1);
 }
-.p{
+
+.p {
     text-align: center;
     background-color: #D7B661;
-    padding: 16px; 
+    padding: 20px; 
     border-radius: 80px; 
-    margin-left: 50pc;
+    margin: 20px auto; 
     display: inline-block; 
+    color: black;
+    font-size: 2em; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 90%;
+        height: auto; 
+    }
+    
+    .img img {
+        max-height: 200px; 
+    }
 }
